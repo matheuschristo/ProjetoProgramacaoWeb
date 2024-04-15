@@ -8,6 +8,7 @@ document
 
     if (username !== "" && password !== "") {
       localStorage.setItem("username", username);
+      localStorage.setItem("password", password);
       localStorage.setItem("authenticated", "true");
       window.location.href = "index.html";
     } else {
