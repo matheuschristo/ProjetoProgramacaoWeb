@@ -18,9 +18,14 @@ document
 
 function verificaAutenticado() {
   var userAutenticado = document.getElementById("userAutenticado");
+  var button = document.getElementById("button-autenticado");
 
   if (localStorage.getItem("username") != null) {
-    userAutenticado.innerText = localStorage.getItem("username");
+    userAutenticado.innerText = "Olá " + localStorage.getItem("username");
+    userAutenticado.style.color = 'white'
+    button.style.backgroundColor = 'transparent'
+    button.style.border = 'none'
+    button.style.width = 'auto'
   } else {
     userAutenticado.innerText = "Usuario nao autenticado";
   }
@@ -28,6 +33,10 @@ function verificaAutenticado() {
 
 function mudarPage() {
   window.location.href = "cadastro.html";
+}
+
+function mudarParaIndex() {
+  window.location.href = "index.html"
 }
 
 function alteraEstilo(estilo) {
