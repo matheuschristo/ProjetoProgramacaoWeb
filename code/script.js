@@ -11,8 +11,6 @@ document
       localStorage.setItem("password", password);
       localStorage.setItem("authenticated", "true");
       window.location.href = "index.html";
-
-
     } else {
       alert("Informe os dados de autenticação");
     }
@@ -24,10 +22,20 @@ function verificaAutenticado() {
   if (localStorage.getItem("username") != null) {
     userAutenticado.innerText = localStorage.getItem("username");
   } else {
-    userAutenticado.innerText = "Usuario nao autenticado"
+    userAutenticado.innerText = "Usuario nao autenticado";
   }
 }
 
 function mudarPage() {
   window.location.href = "cadastro.html";
+}
+
+function alteraEstilo(estilo) {
+  const body = document.body;
+
+  if (estilo === "custom") {
+    body.classList.add("custom");
+  } else {
+    body.classList.remove("custom");
+  }
 }

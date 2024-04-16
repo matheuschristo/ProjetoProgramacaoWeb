@@ -1,141 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Voyage&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Voyage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap");
 body {
-    font-family: 'Mystery Quest', cursive;
+  font-family: "Mystery Quest", cursive;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #principal-main {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 header {
-    width: 100%;
-    height: 15vh;
-    background-color: #000000;
+  width: 100%;
+  height: 15vh;
+  background-color: #000000;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    border-bottom: 0.5vh solid #616382;
+  border-bottom: 0.5vh solid #616382;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 10vh;
-    background-color: #000000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #000000;
 
-    border-top: 0.5vh solid #616382;
+  border-top: 0.5vh solid #616382;
 }
 
 h1 {
-    color: white;
+  color: white;
 }
 
 #cabecalho-divs {
-    width: 30%;
-    height: 100%;
+  width: 30%;
+  height: 100%;
 }
 
 .div-header-1 {
-    display: flex;
+  display: flex;
 }
 
 .div-header-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .div-header-3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
 }
 
 button {
-    width: 20%;
-    height: 40%;
-    margin-right: 2%;
+  width: 20%;
+  height: 40%;
+  margin-right: 2%;
 
-    font-family: 'Voyage', cursive;
-    padding: 0;
+  font-family: "Voyage", cursive;
+  padding: 0;
 }
 
 button:hover {
-    cursor: pointer;
-    background-color: #aaaaaa;
+  cursor: pointer;
+  background-color: #aaaaaa;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #link-header {
-    text-decoration: none; 
-    color: inherit; 
-    cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 
-    color: white;
+  color: white;
 }
 
 #link-header:hover {
-    color: #69a5a4;
+  color: #69a5a4;
 }
 
 #rodape {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #rodape p {
-    color: white;
-    font-family: 'Arial', cursive;
+  color: white;
+  font-family: "Arial", cursive;
 }
 
 .container-conteudo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .div-texto p {
-    font-family: 'Arial', cursive;
+  font-family: "Arial", cursive;
 }
 
 #img-user {
-    width: 10%;
-  
-    border-radius: 50%;
+  width: 10%;
+
+  border-radius: 50%;
 }
 
 #img-user:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .container-form {
-    margin-top: 5%;
+  margin-top: 5%;
 
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 
-    display: flex;
-    justify-content: f;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: f;
+  align-items: center;
+  flex-direction: column;
 }
 
 #h1-title {
-    color: #000000;
+  color: #000000;
+}
+
+body.custom {
+  background-color: #2a333e;
+  font-family: "Times New Roman", sans-serif;
+  color: #fff;
 }
