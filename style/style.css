@@ -135,3 +135,7 @@ a {
     align-items: center;
     flex-direction: column;
 }
+
+#h1-title {
+    color: #000000;
+}
