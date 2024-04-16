@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Kaugumelos Mathemagicos</title>
+</head>
+    <body onload="verificaAutenticado()">
+        <main id="principal-main">
+        <header id="cabecalho">
+            <div id="cabecalho-divs" class="div-header-1">
+                <img src="../image/logo.png" alt="">
+            </div>
+            <div id="cabecalho-divs" class="div-header-2">
+                <a id="link-header" href="">Comprar</a>
+                <a id="link-header" href="">Pesquisar</a>
+                <a id="link-header" href="">Sobre nós</a>
+            </div>
+            <div id="cabecalho-divs" class="div-header-3">
+                <button type="button"><a id="userAutenticado" href="../View/login.html">Login</a></button>
+                <img id="img-user" src="../image/icon-user.webp" alt="" onclick="mudarPage()">
+            </div>
+        </header>
+       
+        <div class="container-form">
+            <h1>Cadastro de Usuário</h1>
+            <form id="cadastroForm" action="processar_dados.php" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" id="masculino" name="sexo" value="Masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="sexo" value="Feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+                <div>
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento">
+                </div>
+                <div>
+                    <label for="interesses">Interesses:</label><br>
+                    <input type="checkbox" id="esporte" name="interesses" value="Esporte">
+                    <label for="esporte">Esporte</label><br>
+                    <input type="checkbox" id="musica" name="interesses" value="Música">
+                    <label for="musica">Música</label><br>
+                    <input type="checkbox" id="tecnologia" name="interesses" value="Tecnologia">
+                    <label for="tecnologia">Tecnologia</label><br>
+                </div>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+            
+        </div>
+
+
+        <footer id="rodape">
+            <p>Feito por: Matheus Christo da Silva e Kauã Berman Amorim</p>
+        </footer>
+    </main>
+    <script src="../code/script.js"></script>
+</body>
+</html>

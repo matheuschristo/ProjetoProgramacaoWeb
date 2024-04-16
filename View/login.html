@@ -7,16 +7,33 @@
     <link rel="stylesheet" href="../style/loginStyle.css" />
   </head>
   <body>
-    
-    <div class="container">
-      <h2>Login</h2>
-      <form id="loginForm">
-        <input type="text" id="username" placeholder="Login" />
-        <input type="password" id="password" placeholder="Senha" />
-        <button type="submit" id="loginBtn">Autenticar</button>
-      </form>
-    </div>
+    <main id="principal-main">
 
+      <header id="cabecalho">
+          <div id="cabecalho-divs" class="div-header-1">
+              <img src="../image/logo.png" alt="">
+          </div>
+          <div id="cabecalho-divs" class="div-header-2">
+              <a id="link-header" href="">Comprar</a>
+              <a id="link-header" href="">Pesquisar</a>
+              <a id="link-header" href="index.html">Sobre nós</a>
+          </div>
+          <div id="cabecalho-divs" class="div-header-3">
+            <img id="img-user" src="../image/icon-user.webp" alt="" onclick="mudarPage()">
+          </div>
+      </header>
+      <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="text" id="username" placeholder="Login" />
+          <input type="password" id="password" placeholder="Senha" />
+          <button type="submit" id="loginBtn">Autenticar</button>
+        </form>
+      </div>
+      <footer id="rodape">
+        <p>Feito por: Matheus Christo da Silva e Kauã Berman Amorim</p>
+      </footer>
+    </main>
     <script src="../code/script.js"></script>
   </body>
 </html>

@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../style/style.css">
     <title>Kaugumelos Mathemagicos</title>
 </head>
-<body>
-    <main id="principal-main">
+    <body onload="verificaAutenticado()">
+        <main id="principal-main">
         <header id="cabecalho">
             <div id="cabecalho-divs" class="div-header-1">
                 <img src="../image/logo.png" alt="">
@@ -18,7 +18,8 @@
                 <a id="link-header" href="">Sobre nós</a>
             </div>
             <div id="cabecalho-divs" class="div-header-3">
-                <button type="button"><a href="../View/login.html">Login</a></button>
+                <button type="button"><a id="userAutenticado" href="../View/login.html">Login</a></button>
+                <img id="img-user" src="../image/icon-user.webp" alt="" onclick="mudarPage()">
             </div>
         </header>
         

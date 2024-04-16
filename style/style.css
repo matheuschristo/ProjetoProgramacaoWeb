@@ -114,3 +114,24 @@ a {
 .div-texto p {
     font-family: 'Arial', cursive;
 }
+
+#img-user {
+    width: 10%;
+  
+    border-radius: 50%;
+}
+
+#img-user:hover {
+    cursor: pointer;
+}
+
+.container-form {
+    margin-top: 5%;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    justify-content: f;
+    align-items: center;
+    flex-direction: column;
+}

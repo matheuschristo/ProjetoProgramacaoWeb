@@ -11,7 +11,23 @@ document
       localStorage.setItem("password", password);
       localStorage.setItem("authenticated", "true");
       window.location.href = "index.html";
+
+
     } else {
       alert("Informe os dados de autenticação");
     }
   });
+
+function verificaAutenticado() {
+  var userAutenticado = document.getElementById("userAutenticado");
+
+  if (localStorage.getItem("username") != null) {
+    userAutenticado.innerText = localStorage.getItem("username");
+  } else {
+    userAutenticado.innerText = "Usuario nao autenticado"
+  }
+}
+
+function mudarPage() {
+  window.location.href = "cadastro.html";
+}
